@@ -1,0 +1,172 @@
+.section {
+    height: 110px;
+}
+
+#page-container {
+    width: 400px;
+    padding: 1px;
+    background: black;
+}
+
+#page-container.error {
+    opacity: 0.1;
+}
+
+#error-box {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 368px;
+    z-index: 1;
+}
+
+#error-box.active {
+    display:  block;
+}
+
+#error-icon {
+    background-image: url( ../imgs/error.png );
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+}
+
+#error-icon.warning {
+    background-image: url( ../imgs/warning.png );
+}
+
+#error-title {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+#error-msg {
+    height: 210px;
+    text-align: center;
+    display: grid;
+    font-size: large;
+    font-weight: 400;
+}
+#error-msg > span  {
+    padding: 0 2pc;
+}
+
+#error-msg > span.warning, 
+#error-msg > span.check  {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.error-button {
+    padding: 2px 20px;
+    align-self: end;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.update-key {
+    padding-bottom: 5px;
+}
+
+.username {
+    border: none;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: large;
+    padding: 2px;
+    height: auto;
+    width: auto;
+    color: white;
+}
+
+#page-container button {
+    float: right;
+    padding: 1px;
+    width: 20%;
+}
+
+.status- box {
+    border-top: 2px solid lightgray;
+    padding: 5px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.title {
+    border: none;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: large;
+    padding: 2px;
+    border-bottom: 2px solid lightgrey;
+    height: auto;
+    width: auto;
+    color: lightgrey;
+}
+
+#clock, 
+#status-keyword,
+.update-value {
+    color: chartreuse;
+}
+
+#clock,
+.update-value {
+    float: right;
+    font-weight: 500;
+}
+
+
+.status-box {
+    border-top: 2px solid lightgray;
+    padding: 5px;
+    border-bottom: 2px solid lightgray;
+}
+
+#running-status {
+    border: none;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: larger;
+    color: white;
+    height: auto;
+    width: auto;
+    margin-bottom: 13px;
+}
+
+.status-icon {
+    float: right;
+    width: 10px;
+    height: 10px;
+    border: 4px solid chartreuse;
+    border-radius: 50%;
+}
+
+.running-status-key {
+    font-family: monospace;
+    font-weight: 500;
+    color: white;
+    padding-bottom: 4px;
+    height: auto;
+}
+
+.running-status-value {
+    float: right;
+}
+
+.update-box {
+    padding: 5px;
+}
+
+.update-key {
+    border: none;
+    font-family: monospace;
+    font-weight: 500;
+    color: white;
+    height: auto;
+    width: auto;
+}
+
+

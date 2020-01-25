@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='Automated matched and hedged sportsbook betting')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    if title
+        title Betbot #{title}
+    else 
+        title Betbot
+    link(rel="stylesheet", type='text/css', href="/public/css/98.css")
+    link(rel="stylesheet", type='text/css', href="/public/css/bot.css")
+    block styles
+  body
+    block content
+    script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+    include globals
+    block scripts

@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "Automated matched and hedged sportbook betting",
+  "description": "Automatic matched betting and placement of acca insurance offers",
+  "version": "0.0.1",
+  "icons": { "16": "imgs/FBHlogo.png",
+           "48": "imgs/FBHlogo.png" },
+  "content_scripts": [
+    {
+      "matches": [ "https://*.ladbrokes.com/*" ],
+      "js": [ "lib/jquery.min.js", "content/site-specific/lb/lb.js" ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "browsingData",
+    "storage"
+  ],
+  "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "imgs/robot.jpg"
+  },
+  "background":{
+      "scripts":[ "lib/jquery.min.js" ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Betbot",
+  "version": "1.0.0",
+  "description": "Automated matched and hedged sportsbook betting",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm run index.js",
+    "sass": "node-sass sass/ -o public/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NFS002/betbot.git"
+  },
+  "author": "Noah Florin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NFS002/betbot/issues"
+  },
+  "homepage": "https://github.com/NFS002/betbot#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "mongoose": "^5.6.13",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.4",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    #login-box( class='window mail active-window')
+        div( class='window-border' )
+            div( class='title-bar' ) #{name} #{version}
+            div( class='header-info' )
+                div( class='middle-bar section' )
+                    p( class='email' ) Email:
+                    input( type='email' )
+                div( class='middle-bar section')
+                    p Password:
+                    input( type="password" )
+                div( class='middle-bar section')
+                    button Login
+
+block scripts
+    script(type='text/javascript' src='/public/js/login.js')
+                

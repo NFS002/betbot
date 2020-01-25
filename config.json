@@ -1,0 +1,5 @@
+{
+"host": "0.0.0.0",
+"port": 8081,
+"db": "mongodb+srv://bbuser:bongo@cluster0-5rdbf.mongodb.net/test?retryWrites=true&w=majority"
+}

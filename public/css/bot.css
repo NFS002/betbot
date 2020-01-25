@@ -1,0 +1,32 @@
+#login-box .header-info {
+  width: 510px;
+  height: 150px; }
+
+#status-box {
+  right: 0; }
+  #status-box .header-info {
+    width: 720px;
+    height: 150px; }
+
+#selector-box {
+  top: 30%;
+  width: 40%; }
+  #selector-box .header-info {
+    height: 500px; }
+    #selector-box .header-info #btn-main {
+      position: fixed;
+      bottom: 0; }
+
+.section {
+  margin: 10px 0; }
+  .section p.email {
+    margin-right: 41px; }
+
+iframe {
+  width: 80%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transform: scale(0.7);
+  transform-origin: 100% 100%; }

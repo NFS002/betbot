@@ -1,0 +1,1 @@
+$.fn.exists = () => ( this instanceof Object && this.length )

@@ -1,0 +1,38 @@
+extends layout
+
+block content
+    #login-box(class='window mail active-window')
+        div( class='window-border' )
+            div( class='title-bar' ) #{name} #{version}
+            div( class='header-info' )
+                div( class='middle-bar section' )
+                    p Logged in as:
+                div( class='middle-bar section')
+                    button Logout
+    #status-box(class='window mail active-window')
+        div( class='window-border' )
+            div( class='title-bar' ) Status updates
+            div( class='header-info' )
+                div( class='middle-bar section' )
+                    p some status
+    #selector-box(class='window mail active-window')
+        div( class='window-border' )
+            div( class='title-bar' ) Bet selector
+            div( class='header-info' )
+                div( class='middle-bar section' )
+                    p Bookmaker:
+                    select#select-bm
+                        option( value='lb') Ladbrokes
+                        option( value='wh') William Hill
+                    p Bet type: 
+                    select#select-type
+                        option( value='matched') Free
+                        option( value='acca') Acca
+                div( class='middle-bar section' )
+                    button#btn-main Validate
+
+
+block scripts
+    script(type='text/javascript' src='/public/js/status.js')
+    script(type='text/javascript' src='/public/js/selector.js')
+                
